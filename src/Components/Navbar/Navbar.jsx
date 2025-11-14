@@ -41,7 +41,7 @@ const Navbar = () => {
           </div>
 
           <a href="/" className="flex items-center text-xl">
-            HERO.IO
+            WarmPaws
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -58,13 +58,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a
-            target="_blank"
-            href="https://github.com/shuvoroy10/"
-            className="btn bg-linear-to-bl from-violet-500 to-fuchsia-500 text-white"
-          >
-            Contribute
-          </a>
+          <img src="" alt="" />
         </div>
       </div>
     </div>
