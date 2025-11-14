@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://i.ibb.co.com/gZjFWZT0/close-up-of-a-dog-eating-from-the-bowl-Dmytro-Zinkevych-Shutterstock.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+    "image": "https://i.ibb.co.com/390mNDTp/The-Wildest-Hero-Surviving-a-Snowy-Winter-with-Your-Dog-pexels-cottonbro-studio-7481806.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Dog Winter Health Checkup",
+    "providerName": "HappyPaws Clinic",
+    "providerEmail": "care@happypaws.com",
+    "price": 40,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Full winter health screening including temperature check, hydration test, and cold-weather advice.",
+    "image": "https://i.ibb.co.com/cXLtSWRN/close-up-veterinarian-taking-care-dog.jpg",
+    "category": "Healthcare"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Warm Sweater Knitting for Dogs",
+    "providerName": "Comfort Knit Pets",
+    "providerEmail": "support@ckpets.com",
+    "price": 35,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Handmade wool sweaters tailored perfectly to your dog’s body for maximum comfort during winter.",
+    "image": "https://i.ibb.co.com/7dMQnF7W/white-cat-couch-vet-gloves-sick-eyes-cat.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Winter Dog Walking Service",
+    "providerName": "SnowSteps Walkers",
+    "providerEmail": "walk@snowsteps.com",
+    "price": 20,
+    "rating": 4.6,
+    "slotsAvailable": 6,
+    "description": "Safe, short-distance winter dog walks ensuring your pet stays active even in low temperatures.",
+    "image": "https://i.ibb.co.com/3mhHWNKZ/dog-winter-park.jpg",
+    "category": "Outdoor"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Winter Nutrition Consultation",
+    "providerName": "PetDiet Pro",
+    "providerEmail": "diet@petdietpro.com",
+    "price": 28,
+    "rating": 4.8,
+    "slotsAvailable": 4,
+    "description": "Personalized nutrition planning to help your dog maintain energy and immunity during winter.",
+    "image": "https://i.ibb.co.com/yctSH7sF/Dog-Sweater-Alice-Neal-Love-Knitting-5c649c6646e0fb0001f09122.jpg",
+    "category": "Nutrition"
+  }
+]
