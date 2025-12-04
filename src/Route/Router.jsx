@@ -14,10 +14,12 @@ const Router = createBrowserRouter([
         children:[
             {
                 index: true,
+                loader: ()=>fetch('ServiceDetails.json'),
                 Component: Home
             },
             {
                 path: 'service',
+                loader: ()=>fetch('ServiceDetails.json'),
                 Component: Service
             },
             {

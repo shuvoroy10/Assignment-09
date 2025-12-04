@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className=" bg-base-100 shadow-sm ">
+    <div className=" bg-gray-100 shadow-sm ">
       <div className="navbar container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
