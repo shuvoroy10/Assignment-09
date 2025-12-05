@@ -1,7 +1,20 @@
-import React from "react";
+import React, { use } from "react";
 import { NavLink } from "react-router";
+import { AuthContex } from "../../Contex/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = use(AuthContex);
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        // Sign-out successful.
+        alert("sdsd");
+      })
+      .catch((error) => {
+        // An error happened.
+        alert(error);
+      });
+  };
   return (
     <div className=" bg-gray-100 shadow-sm ">
       <div className="navbar container mx-auto">
@@ -41,7 +54,7 @@ const Navbar = () => {
           </div>
 
           <a href="/" className="flex items-center text-xl">
-            WarmPaws
+            Warm<span className="text-amber-500">Paws</span>
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -58,7 +71,18 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <img src="" alt="" />
+          {user ? (
+            <div className="flex gap-2">
+              <img
+                className="w-[50px] h-[50px] rounded-[50%] border-[3px] border-red-600"
+                src={user.photoURL}
+                alt={user.displayName}
+              />
+              <button onClick={handleLogOut}>LogOut</button>
+            </div>
+          ) : (
+            <NavLink to="/log-in">Login</NavLink>
+          )}
         </div>
       </div>
     </div>
