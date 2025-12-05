@@ -148,6 +148,58 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="container mx-auto">
+        <h2 className="text-3xl text-center font-bold mt-20">
+          Meet Our Expert Vets
+        </h2>
+        <p className="text-center my-5">
+          Meet our skilled and caring vets dedicated to keeping your pets
+          healthy and happy.
+        </p>
+        <div className="grid grid-cols-4 gap-3">
+          <div>
+            <img className="rounded-[50%] border-2 border-green-600" src="https://i.ibb.co.com/b51ywkKD/1-2.jpg" alt="" />
+            <div className="border-x-2 border-green-600 p-3 mb-4">
+              <h4 className="font-semibold text-center text-xl mb-2">Dr. Arif Hasan</h4>
+              <h4><span className="font-semibold">Position:</span> Veterinary Surgeon</h4>
+              <h4><span className="font-semibold">Specialty:</span> Small animal surgery, emergency treatment</h4>
+              <h4><span className="font-semibold">Education:</span> DVM, Chittagong Veterinary & Animal Sciences University</h4>
+              <h4><span className="font-semibold">Available:</span> Sun–Thu, 10 AM – 6 PM</h4>
+            </div>
+          </div>
+          <div>
+            <img className="rounded-[50%] border-2 border-green-600" src="https://i.ibb.co.com/hRyPPZQR/2-2.jpg" alt="" />
+            <div className="border-x-2 border-green-600 p-3 mb-4">
+              <h4 className="font-semibold text-center text-xl mb-2">Dr. Arif Hasan</h4>
+              <h4><span className="font-semibold">Position:</span> Veterinary Surgeon</h4>
+              <h4><span className="font-semibold">Specialty:</span> Small animal surgery, emergency treatment</h4>
+              <h4><span className="font-semibold">Education:</span> DVM, Chittagong Veterinary & Animal Sciences University</h4>
+              <h4><span className="font-semibold">Available:</span> Sun–Thu, 10 AM – 6 PM</h4>
+            </div>
+          </div>
+          <div>
+            <img className="rounded-[50%] border-2 border-green-600" src="https://i.ibb.co.com/nNTsyTYZ/4.jpg" alt="" />
+            <div className="border-x-2 border-green-600 p-3 mb-4">
+              <h4 className="font-semibold text-center text-xl mb-2">Dr. Arif Hasan</h4>
+              <h4><span className="font-semibold">Position:</span> Veterinary Surgeon</h4>
+              <h4><span className="font-semibold">Specialty:</span> Small animal surgery, emergency treatment</h4>
+              <h4><span className="font-semibold">Education:</span> DVM, Chittagong Veterinary & Animal Sciences University</h4>
+              <h4><span className="font-semibold">Available:</span> Sun–Thu, 10 AM – 6 PM</h4>
+            </div>
+          </div>
+
+          <div>
+            <img className="rounded-[50%] border-2 border-green-600" src="https://i.ibb.co.com/s9McQScD/3.jpg" alt="" />
+            <div className="border-x-2 border-green-600 p-3 mb-4">
+              <h4 className="font-semibold text-center text-xl mb-2">Dr. Arif Hasan</h4>
+              <h4><span className="font-semibold">Position:</span> Veterinary Surgeon</h4>
+              <h4><span className="font-semibold">Specialty:</span> Small animal surgery, emergency treatment</h4>
+              <h4><span className="font-semibold">Education:</span> DVM, Chittagong Veterinary & Animal Sciences University</h4>
+              <h4><span className="font-semibold">Available:</span> Sun–Thu, 10 AM – 6 PM</h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
