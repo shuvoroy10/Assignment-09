@@ -1,4 +1,3 @@
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -6,11 +5,11 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 import { FreeMode, Pagination } from "swiper/modules";
-import { Link, useLoaderData} from "react-router";
+import { Link, useLoaderData } from "react-router";
 
 const Home = () => {
   const data = useLoaderData();
- 
+
   return (
     <div>
       <Swiper
@@ -105,10 +104,49 @@ const Home = () => {
               </div>
             </div>
             <button className="text-center btn-ghost hover:text-white  hover:cursor-pointer hover:bg-black p-2">
-             <Link to={`/service-details/${Services.serviceId}`}>View Details</Link>
+              <Link to={`/service-details/${Services.serviceId}`}>
+                View Details
+              </Link>
             </button>
           </div>
         ))}
+      </div>
+      <div className="bg-amber-50 py-5">
+        <div className="container mx-auto">
+          <h2 className="text-3xl text-center font-bold mt-20">
+            Winter Care Tips for Pets
+          </h2>
+          <p className="text-center my-5">
+            Keep your pets warm, healthy, and happy this winter with simple care
+            tips for <br /> nutrition, grooming, and protection from the cold.
+          </p>
+          <div className="flex items-center justify-evenly">
+            <div>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MTxhTU1HGm4?si=riaAlRGSzf7fcFRs"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Jh-5tPpzNXU?si=-A5HVi1aktCkGWUE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
