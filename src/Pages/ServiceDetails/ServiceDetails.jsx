@@ -17,7 +17,7 @@ const ServiceDetails = () => {
     toast.success("Booked successfully!")
     
   }
-  console.log(id, data, service);
+//   console.log(id, data, service);
   useEffect(() => {
     const ServiceDetails = data.find(
       (singleService) => singleService.serviceId == id
