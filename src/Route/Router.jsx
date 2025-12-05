@@ -5,6 +5,7 @@ import ErrorPage from '../Pages/ErrorPage.jsx/ErrorPage';
 import Home from '../Pages/Home/Home';
 import Service from '../Pages/Service/Service';
 import MyProfile from '../Pages/MyProfile/MyProfile';
+import ServiceDetails from '../Pages/ServiceDetails/ServiceDetails';
 
 const Router = createBrowserRouter([
     {
@@ -14,18 +15,23 @@ const Router = createBrowserRouter([
         children:[
             {
                 index: true,
-                loader: ()=>fetch('ServiceDetails.json'),
-                Component: Home
+                Component: Home,
+                loader: ()=>fetch('/ServiceDetails.json')
             },
             {
                 path: 'service',
-                loader: ()=>fetch('ServiceDetails.json'),
-                Component: Service
+                Component: Service,
+                loader: ()=>fetch('/ServiceDetails.json')
             },
             {
                 path: 'my-profile',
                 Component: MyProfile
-            }
+            },
+            {
+            path: '/service-details/:id',
+            Component: ServiceDetails,
+            loader: ()=>fetch('/ServiceDetails.json')
+        },
         ]
     }
 ])

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -6,11 +6,11 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 import { FreeMode, Pagination } from "swiper/modules";
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData} from "react-router";
 
 const Home = () => {
   const data = useLoaderData();
-  console.log(data);
+ 
   return (
     <div>
       <Swiper
@@ -105,7 +105,7 @@ const Home = () => {
               </div>
             </div>
             <button className="text-center btn-ghost hover:text-white  hover:cursor-pointer hover:bg-black p-2">
-              View Details
+             <Link to={`/service-details/${Services.serviceId}`}>View Details</Link>
             </button>
           </div>
         ))}
