@@ -11,10 +11,10 @@ const location = useLocation();
     if(loading){
         return <Loading></Loading>
     }
-    if(user && user?.email){
+    if(user){
         return children;
     }
-    return <Navigate state={location.pathname} to={'/log-in'}></Navigate>
+    return <Navigate state={location?.pathname} to={'/log-in'}></Navigate>
 };
 
 export default PrivateRoute;

@@ -21,34 +21,37 @@ const Router = createBrowserRouter([
         index: true,
         Component: Home,
         loader: () => fetch("/ServiceDetails.json"),
-        hydrateFallbackElement: <Loading></Loading>
+        hydrateFallbackElement: <Loading></Loading>,
       },
       {
         path: "service",
         Component: Service,
         loader: () => fetch("/ServiceDetails.json"),
-        hydrateFallbackElement: <Loading></Loading>
+        hydrateFallbackElement: <Loading></Loading>,
       },
       {
-        path: "my-profile",
-        Component: MyProfile,
+        path: "/my-profile",
+        element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>,
+        
       },
       {
         path: "/service-details/:id",
-        element: <PrivateRoute>
+        element: (
+          <PrivateRoute>
             <ServiceDetails></ServiceDetails>
-        </PrivateRoute>,
+          </PrivateRoute>
+        ),
         loader: () => fetch("/ServiceDetails.json"),
-        hydrateFallbackElement: <Loading></Loading>
+        hydrateFallbackElement: <Loading></Loading>,
       },
       {
         path: "log-in",
         Component: Login,
       },
       {
-        path: 'register',
-        Component: Register
-      }
+        path: "register",
+        Component: Register,
+      },
     ],
   },
 ]);
