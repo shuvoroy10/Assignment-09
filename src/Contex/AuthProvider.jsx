@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
 import app from '../firebase/firebase.config';
-import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 // eslint-disable-next-line react-refresh/only-export-components
 export const AuthContex = createContext();
 const googleProvider = new GoogleAuthProvider()
@@ -12,7 +12,9 @@ const [loading, setLoading] = useState(true);
         setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
-
+const passwordReset = (email) => {
+    return sendPasswordResetEmail(auth, email)
+}
 const signInWithGoogle = () => {
     setLoading(true)
     return signInWithPopup(auth, googleProvider)
@@ -41,7 +43,7 @@ const logOut = () => {
         }
     },[])
     const authData = {
-        user, setUser, createUser, logOut, signIn, loading, setLoading, updateUser, signInWithGoogle
+        user, setUser, createUser, logOut, signIn, loading, setLoading, updateUser, signInWithGoogle, passwordReset
     }
     // console.log(user)
     return (
