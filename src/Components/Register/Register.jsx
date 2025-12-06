@@ -1,9 +1,11 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import { Link, useNavigate } from 'react-router';
 import { AuthContex } from '../../Contex/AuthProvider';
+import { FaEyeSlash, FaRegEye } from 'react-icons/fa';
 
 const Register = () => {
     const {createUser, setUser, updateUser} = use(AuthContex)
+    const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate();
     const handleRegister = (e) => {
         e.preventDefault();
@@ -33,6 +35,11 @@ navigate('/')
             alert(errorMessage)
         })
     }
+    const handleSetPassword = (e) => {
+    e.preventDefault();
+    setShowPassword(!showPassword);
+  };
+    
     return (
         <div className="flex justify-center items-center my-45">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -46,10 +53,24 @@ navigate('/')
             <label className="label">Email</label>
             <input type="email" className="input" name='email' placeholder="Email" required/>
             <label className="label">Password</label>
-            <input type="password" className="input" name='password' placeholder="Password" required/>
-            <div>
-              <a className="link link-hover">Forgot password?</a>
-            </div>
+            <div className="relative">
+                              <input
+                                type={showPassword ? "text" : "password"}
+                                className="input"
+                                name="password"
+                                placeholder="Password"
+                                required
+                              />
+                              <button type="button"
+                                onClick={handleSetPassword}
+                                className="btn btn-xs absolute right-5 top-2 z-1"
+                              >
+                                {showPassword ? <FaEyeSlash /> : <FaRegEye />}
+                              </button>
+                            </div>
+            {/* <input type="password" className="input" name='password' placeholder="Password" required/> */}
+            
+            
             <button className="btn btn-neutral mt-4">Login</button>
             <p>
           Already have an account?,{" "}
