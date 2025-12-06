@@ -18,7 +18,7 @@ const Home = () => {
         freeMode={true}
         pagination={{ clickable: true }}
         modules={[FreeMode, Pagination]}
-        className="mySwiper my-5"
+        className="mySwiper mt-25 mb-5"
       >
         <SwiperSlide>
           <img
@@ -122,8 +122,8 @@ const Home = () => {
           </p>
           <div className="flex flex-col md:flex-row lg:flex-row items-center gap-2 justify-evenly">
             <div>
-              <iframe className="w-[240px] lg:w-[560px]"
-                
+              <iframe
+                className="w-[240px] lg:w-[560px]"
                 height="315"
                 src="https://www.youtube.com/embed/MTxhTU1HGm4?si=riaAlRGSzf7fcFRs"
                 title="YouTube video player"
@@ -137,7 +137,7 @@ const Home = () => {
               <iframe
                 className="w-[240px] lg:w-[560px]"
                 height="315"
-                src="https://www.youtube.com/embed/Jh-5tPpzNXU?si=-A5HVi1aktCkGWUE"
+                src="https://www.youtube.com/embed/D_YS-KreKR8?si=msit53uQ_rCpFHr6"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -158,47 +158,153 @@ const Home = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
           <div>
-            <img className="rounded-[50%] border-2 border-green-600" src="https://i.ibb.co.com/b51ywkKD/1-2.jpg" alt="" />
+            <img
+              className="rounded-[50%] border-2 border-green-600"
+              src="https://i.ibb.co.com/b51ywkKD/1-2.jpg"
+              alt=""
+            />
             <div className="border-x-2 border-green-600 p-3 mb-4">
-              <h4 className="font-semibold text-center text-xl mb-2">Dr. Arif Hasan</h4>
-              <h4><span className="font-semibold">Position:</span> Veterinary Surgeon</h4>
-              <h4><span className="font-semibold">Specialty:</span> Small animal surgery, emergency treatment</h4>
-              <h4><span className="font-semibold">Education:</span> DVM, Chittagong Veterinary & Animal Sciences University</h4>
-              <h4><span className="font-semibold">Available:</span> Sun–Thu, 10 AM – 6 PM</h4>
+              <h4 className="font-semibold text-center text-xl mb-2">
+                Dr. Arif Hasan
+              </h4>
+              <h4>
+                <span className="font-semibold">Position:</span> Veterinary
+                Surgeon
+              </h4>
+              <h4>
+                <span className="font-semibold">Specialty:</span> Small animal
+                surgery, emergency treatment
+              </h4>
+              <h4>
+                <span className="font-semibold">Education:</span> DVM,
+                Chittagong Veterinary & Animal Sciences University
+              </h4>
+              <h4>
+                <span className="font-semibold">Available:</span> Sun–Thu, 10 AM
+                – 6 PM
+              </h4>
             </div>
           </div>
           <div>
-            <img className="rounded-[50%] border-2 border-green-600" src="https://i.ibb.co.com/hRyPPZQR/2-2.jpg" alt="" />
+            <img
+              className="rounded-[50%] border-2 border-green-600"
+              src="https://i.ibb.co.com/hRyPPZQR/2-2.jpg"
+              alt=""
+            />
             <div className="border-x-2 border-green-600 p-3 mb-4">
-              <h4 className="font-semibold text-center text-xl mb-2">Dr. Tanveer Rahman</h4>
-              <h4><span className="font-semibold">Position:</span> Exotic Animal Veterinarian</h4>
-              <h4><span className="font-semibold">Specialty:</span> Birds, rabbits, reptiles</h4>
-              <h4><span className="font-semibold">Education:</span> DVM, Bangladesh Agricultural University</h4>
-              <h4><span className="font-semibold">Available:</span> Mon–Fri, 9 AM – 5 PM</h4>
+              <h4 className="font-semibold text-center text-xl mb-2">
+                Dr. Tanveer Rahman
+              </h4>
+              <h4>
+                <span className="font-semibold">Position:</span> Exotic Animal
+                Veterinarian
+              </h4>
+              <h4>
+                <span className="font-semibold">Specialty:</span> Birds,
+                rabbits, reptiles
+              </h4>
+              <h4>
+                <span className="font-semibold">Education:</span> DVM,
+                Bangladesh Agricultural University
+              </h4>
+              <h4>
+                <span className="font-semibold">Available:</span> Mon–Fri, 9 AM
+                – 5 PM
+              </h4>
             </div>
           </div>
           <div>
-            <img className="rounded-[50%] border-2 border-green-600" src="https://i.ibb.co.com/nNTsyTYZ/4.jpg" alt="" />
+            <img
+              className="rounded-[50%] border-2 border-green-600"
+              src="https://i.ibb.co.com/nNTsyTYZ/4.jpg"
+              alt=""
+            />
             <div className="border-x-2 border-green-600 p-3 mb-4">
-              <h4 className="font-semibold text-center text-xl mb-2">Dr. Maya Sen</h4>
-              <h4><span className="font-semibold">Position:</span> Senior Veterinary Consultant</h4>
-              <h4><span className="font-semibold">Specialty:</span> Chronic illness, dermatology, senior pet care</h4>
-              <h4><span className="font-semibold">Education:</span> DVM, Rajshahi University</h4>
-              <h4><span className="font-semibold">Available:</span> Sun–Thu, 12 PM – 8 PM</h4>
+              <h4 className="font-semibold text-center text-xl mb-2">
+                Dr. Maya Sen
+              </h4>
+              <h4>
+                <span className="font-semibold">Position:</span> Senior
+                Veterinary Consultant
+              </h4>
+              <h4>
+                <span className="font-semibold">Specialty:</span> Chronic
+                illness, dermatology, senior pet care
+              </h4>
+              <h4>
+                <span className="font-semibold">Education:</span> DVM, Rajshahi
+                University
+              </h4>
+              <h4>
+                <span className="font-semibold">Available:</span> Sun–Thu, 12 PM
+                – 8 PM
+              </h4>
             </div>
           </div>
 
           <div>
-            <img className="rounded-[50%] border-2 border-green-600" src="https://i.ibb.co.com/s9McQScD/3.jpg" alt="" />
+            <img
+              className="rounded-[50%] border-2 border-green-600"
+              src="https://i.ibb.co.com/s9McQScD/3.jpg"
+              alt=""
+            />
             <div className="border-x-2 border-green-600 p-3 mb-4">
-              <h4 className="font-semibold text-center text-xl mb-2">Dr. Nisha Khandel</h4>
-              <h4><span className="font-semibold">Position:</span> Pet Nutrition Specialist</h4>
-              <h4><span className="font-semibold">Specialty:</span> Animal diet planning, weight management, puppy/kitten nutrition</h4>
-              <h4><span className="font-semibold">Education:</span> DVM, Sylhet Agricultural University</h4>
-              <h4><span className="font-semibold">Available:</span> Sat–Wed, 11 AM – 7 PM</h4>
+              <h4 className="font-semibold text-center text-xl mb-2">
+                Dr. Nisha Khandel
+              </h4>
+              <h4>
+                <span className="font-semibold">Position:</span> Pet Nutrition
+                Specialist
+              </h4>
+              <h4>
+                <span className="font-semibold">Specialty:</span> Animal diet
+                planning, weight management, puppy/kitten nutrition
+              </h4>
+              <h4>
+                <span className="font-semibold">Education:</span> DVM, Sylhet
+                Agricultural University
+              </h4>
+              <h4>
+                <span className="font-semibold">Available:</span> Sat–Wed, 11 AM
+                – 7 PM
+              </h4>
             </div>
           </div>
         </div>
+      </div>
+      <div className="container mx-auto space-y-1 my-5">
+        <h2 className="text-3xl text-center font-bold mt-20 mb-6">
+          Most Ask Question of this Week
+        </h2>
+        <h4 className="font-semibold ">
+          1. What types of pets do you care for?
+        </h4>
+        <span className="text-blue-400">
+          We provide services for dogs, cats, rabbits, birds, and small animals
+          like hamsters or guinea pigs.
+        </span>
+        <h4 className="font-semibold ">2. Do you offer home visit pet care?</h4>
+        <span className="text-blue-400">
+          Yes. Our trained caregivers can visit your home for feeding, walking,
+          grooming, or general check-ups.
+        </span>
+        <h4 className="font-semibold ">3. Are your pet sitters certified?</h4>
+        <span className="text-blue-400">
+          Yes. All our pet sitters and groomers are trained and experienced in
+          pet handling and basic pet first aid.
+        </span>
+        <h4 className="font-semibold ">4. What are your service hours?</h4>
+        <span className="text-blue-400">
+          We operate from 9 AM to 10 PM, and emergency care is available 24/7 for registered customers.
+        </span>
+        <h4 className="font-semibold ">5. How do I book an appointment?</h4>
+        <span className="text-blue-400">
+          You can book directly through our website, call our helpline, or message us on WhatsApp.
+        </span>
+        <h4 className="font-semibold ">6. Do you provide emergency pet care?</h4>
+        <span className="text-blue-400">
+          Yes. We have an emergency response team for sudden health issues or accidents (subject to availability).
+        </span>
       </div>
     </div>
   );

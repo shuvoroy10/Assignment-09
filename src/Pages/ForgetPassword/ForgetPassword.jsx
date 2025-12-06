@@ -30,7 +30,7 @@ navigate('/log-in')
     }
   return (
     <div>
-      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto my-50">
+      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto my-4 md:my-40 lg:my-50">
         <h2 className="text-2xl font-semibold text-center">
           Reset your password
         </h2>

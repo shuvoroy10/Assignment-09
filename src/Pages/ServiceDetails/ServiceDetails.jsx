@@ -27,7 +27,7 @@ const ServiceDetails = () => {
   }, [data, id]);
 
   return (
-    <div className="container mx-auto flex mt-20">
+    <div className="container mx-auto flex flex-col md:flex-row lg:flex-row mt-20">
       <div className="flex-1">
         <img src={service.image} alt="" />
       </div>
