@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router";
 import { AuthContex } from "../../Contex/AuthProvider";
 import { FaEyeSlash, FaRegEye } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
-
+import "animate.css";
 const Login = () => {
   const [error, setError] = useState("");
   const { signIn, signInWithGoogle } = use(AuthContex);
@@ -19,7 +19,7 @@ const Login = () => {
     signIn(email, password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        // console.log(user);
         toast.success("Successfully LogedIn");
         navigate(`${location.state ? location.state : "/"}`);
       })
@@ -32,11 +32,11 @@ const Login = () => {
   const handleGoogleSignIn = () => {
     signInWithGoogle()
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         toast.success("Successfully SignIn");
         navigate(`${location.state ? location.state : "/"}`);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => toast(error));
   };
   const handleSetPassword = (e) => {
     e.preventDefault();
@@ -46,8 +46,9 @@ const Login = () => {
   return (
     <div className="flex justify-center items-center my-45">
       <Toaster />
+      
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-        <h2 className="text-2xl font-semibold text-center">
+        <h2 className="text-2xl font-semibold text-center animate__animated animate__bounce">
           Login your account
         </h2>
         <form onSubmit={handleLogIn} className="card-body">

@@ -16,7 +16,7 @@ const handleUpdate = (e) => {
         const form = e.target;
         const name = form.name.value;
         const url = form.url.value;
-        console.log({name, url,})
+        // console.log({name, url,})
         updateUser({displayName: name, photoURL: url})
             .then(()=>{
                 setUser({...user, displayName: name, photoURL: url})
@@ -26,7 +26,7 @@ const handleUpdate = (e) => {
 
             })
             .catch((error)=>{
-              console.log(error)  
+              toast(error)  
               setUser(user)
             })
        
@@ -37,7 +37,7 @@ const handleUpdate = (e) => {
       
       <div className="bg-gray-100 p-10 flex flex-col gap-4 m-20">
         <img
-          className="w-[250px] h-[250px] rounded-full"
+          className="w-[250px] h-[250px] rounded-[50%]"
           src={user.photoURL}
           alt={user.displayName}
         />

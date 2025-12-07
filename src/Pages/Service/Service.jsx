@@ -1,12 +1,12 @@
 import React from "react";
 import { Link, useLoaderData } from "react-router";
-
+import "animate.css";
 const Service = () => {
   const data = useLoaderData();
 
   return (
     <div className="container mx-auto">
-      <h2 className="text-3xl text-center font-bold mt-20">
+      <h2 className="text-3xl text-center font-bold mt-20 animate__animated animate__bounce">
         Our Winter Care Services
       </h2>
       <p className="text-center my-5">

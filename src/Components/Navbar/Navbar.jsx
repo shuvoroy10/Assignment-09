@@ -1,24 +1,29 @@
 import React, { use } from "react";
 import { NavLink } from "react-router";
 import { AuthContex } from "../../Contex/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
 
 const Navbar = () => {
   const { user, logOut } = use(AuthContex);
   const handleLogOut = () => {
+    
+
+    
     logOut()
       .then(() => {
+        toast.success('LogOut Successfully')
         // Sign-out successful.
-        alert("sdsd");
       })
       .catch((error) => {
         // An error happened.
-        alert(error);
+        toast(error);
       });
   };
   return (
     <div className=" bg-gray-100 shadow-sm ">
       <div className="navbar container mx-auto">
         <div className="navbar-start">
+          
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -86,6 +91,8 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+    
+    
   );
 };
 

@@ -2,6 +2,8 @@ import React, { use, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { AuthContex } from "../../Contex/AuthProvider";
 import { FaEyeSlash, FaRegEye } from "react-icons/fa";
+import toast from "react-hot-toast";
+import "animate.css";
 
 const Register = () => {
   const [error, setError] = useState("");
@@ -9,7 +11,6 @@ const Register = () => {
   const { createUser, setUser, updateUser } = use(AuthContex);
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
-
 
   const handlePasswordChange = (e) => {
     const p = e.target.value;
@@ -20,12 +21,12 @@ const Register = () => {
     if (p.length >= 6) strength += 1;
 
     setPasswordStrength(strength);
-    setError(""); 
+    setError("");
   };
 
   const handleRegister = (e) => {
     e.preventDefault();
-    setError(""); 
+    setError("");
 
     const form = e.target;
     const name = form.name.value;
@@ -33,7 +34,6 @@ const Register = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-   
     if (!/[A-Z]/.test(password)) {
       setError("Password must contain at least one uppercase letter");
       return;
@@ -47,7 +47,6 @@ const Register = () => {
       return;
     }
 
- 
     createUser(email, password)
       .then((result) => {
         const user = result.user;
@@ -58,7 +57,7 @@ const Register = () => {
             navigate("/");
           })
           .catch((error) => {
-            console.log(error);
+            toast(error);
             setUser(user);
           });
       })
@@ -75,19 +74,38 @@ const Register = () => {
   return (
     <div className="flex justify-center items-center my-45">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-        <h2 className="text-2xl font-semibold text-center">Register</h2>
+        <h2 className="text-2xl font-semibold text-center animate__animated animate__bounce">
+          Register your account
+        </h2>
 
         <form onSubmit={handleRegister} className="card-body">
           <fieldset className="fieldset">
-
             <label className="label">Name</label>
-            <input type="text" className="input" name="name" placeholder="Name" required />
+            <input
+              type="text"
+              className="input"
+              name="name"
+              placeholder="Name"
+              required
+            />
 
             <label className="label">Photo URL</label>
-            <input type="text" className="input" name="url" placeholder="Photo URL" required />
+            <input
+              type="text"
+              className="input"
+              name="url"
+              placeholder="Photo URL"
+              required
+            />
 
             <label className="label">Email</label>
-            <input type="email" className="input" name="email" placeholder="Email" required />
+            <input
+              type="email"
+              className="input"
+              name="email"
+              placeholder="Email"
+              required
+            />
 
             <label className="label">Password</label>
             <div className="relative">
@@ -124,7 +142,6 @@ const Register = () => {
               ></div>
             </div>
 
-            
             {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
 
             <button className="btn btn-neutral mt-4">Register</button>
@@ -135,7 +152,6 @@ const Register = () => {
                 Login
               </Link>
             </p>
-
           </fieldset>
         </form>
       </div>
