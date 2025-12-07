@@ -11,12 +11,10 @@ const ServiceDetails = () => {
     e.preventDefault();
     e.target.name.value = '';
     e.target.mail.value = '';
+    toast.success("Booked successfully!")
     // console.log(e.target.name.value)
   }
-  const confirm = () => {
-    toast.success("Booked successfully!")
-    
-  }
+  
 //   console.log(id, data, service);
   useEffect(() => {
     const ServiceDetails = data.find(
@@ -85,7 +83,7 @@ const ServiceDetails = () => {
               placeholder="Enter Your Email"
               required
             />
-            <button onClick={confirm} className="w-full bg-amber-600 p-3 text-white my-3">Book Now</button>
+            <button className="w-full bg-amber-600 p-3 text-white my-3">Book Now</button>
             <Toaster />
             </form>
           </div>
