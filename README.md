@@ -1,16 +1,24 @@
-# React + Vite
+# WarmPaw
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** https://warmpaw-2025.netlify.app/
 
-Currently, two official plugins are available:
+## 🚀 Purpose  
+WarmPaw is a web app designed to take care of your pet, help pet owners track their pet’s health and activity. The goal is to deliver a smooth, responsive, and intuitive experience for users who want search online pet service.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features  
+- Feature 1: [User registration and login ,Responsive design for mobile and desktop]   
+- Feature 2: [“Friendly error handling / validation” / “Simple navigation / clean layout”]  
 
-## React Compiler
+## 🧰 Built With / Dependencies  
+- [Package 1] —  `animate.css": "^4.1.1`,
+- [Package 2] —  `firebase": "^12.6.0`, 
+- [Package 2] —  `react-hot-toast`, 
+- [Package 2] —  `react-icons`, 
+- [Package 2] —  `react-router`, 
+- [Package 2] —  `tailwindcss`, 
+- [Package 2] —  `swiper`, 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✅ Why WarmPaw Matters  
+WarmPaw solves million pet health problem by their advisor . It’s simple, efficient, and built with modern web standards to ensure reliability and ease of use.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  
